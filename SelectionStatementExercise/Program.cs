@@ -29,6 +29,34 @@ namespace SelectionStatementExercise
             {
                 Console.WriteLine("You got it!");
             }
+
+            Console.WriteLine("Please choose from the following subjects: Physical Education, History, Math, Reading, and Science.");
+            Console.WriteLine("Please enter your favorite subject...");
+            string subject = Console.ReadLine().ToLower;
+
+            switch (subject)
+            {
+                case "pe":
+                case "physical education":
+                    Console.WriteLine("Your favorite subject is pe.");
+                    break;
+                case "history":
+                    Console.WriteLine("Your favorite subject is history.");
+                    break;
+                case "math":
+                    Console.WriteLine("Your favorite subject is math.");
+                    break;
+                case "reading":
+                    Console.WriteLine("Your favorite subject is reading.");
+                    break;
+                case "science":
+                    Console.WriteLine("Your favorite subject is science.");
+                    break;
+                default:
+                    Console.WriteLine("This subject is not in the list.  Please check your spelling and try again.");
+                    break;
+            }
         }
+        
     }
 }
